@@ -1,0 +1,13 @@
+
+library(readr)
+my.data <- read_csv("C:/Users/User/Downloads/Raw Data Sales Velo 01 Feb new process.csv")
+View(my.data)
+class(my.data)
+df <- as.data.frame(my.data)
+class(df)
+head(df)
+df = subset(df, select = -c(X49,X50) )
+head(df)
+nrow(df)
+ncol(df)
+# summary append (cara menambah kolom, apply semua kolom, countif)
